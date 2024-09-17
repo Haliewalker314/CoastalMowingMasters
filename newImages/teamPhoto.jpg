@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Mowing Masters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="newImages/logo-icon-transparent.png" alt="logo" height="68px" width="68px">
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#photos">Photos</a>
+            <a href="#footer">Contact</a>
+            <a href="#about">About Us</a>
+            <a href="https://www.facebook.com/profile.php?id=61563111547205&sk=reviews" target="_blank" class="btn">View/Type a Review</a>
+        </nav>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- End Navbar Section -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <img src="images/placeholder.jpg" alt="Coastal Mowing Masters Placeholder" class="title-img">
+            <p class="center-text">We guarantee a beautiful yard after we're done with it. You will be taken care of. We are officially an LLC.</p>
+        </div>
+    </section>
+    <!-- End Home Section -->
+<!-- Lawn Images Section -->
+<section class="lawn-images-carousel" id="lawn-images-carousel">
+    <h2>Our Recent Work</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <!-- Image Set 1 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before1.jpg" alt="Lawn Before 1" class="toggle-image" data-before="newImages/before1.jpg" data-after="newImages/after1.jpg">
+            </div>
+            <!-- Image Set 2 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before2.jpg" alt="Lawn Before 2" class="toggle-image" data-before="newImages/before2.jpg" data-after="newImages/after2.jpg">
+            </div>
+            <!-- Image Set 3 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before3.jpg" alt="Lawn Before 3" class="toggle-image" data-before="newImages/before3.jpg" data-after="newImages/after3.jpg">
+            </div>
+            <!-- Image Set 4 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before4.jpg" alt="Lawn Before 4" class="toggle-image" data-before="newImages/before4.jpg" data-after="newImages/after4.jpg">
+            </div>
+            <!-- Image Set 5 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before5.jpg" alt="Lawn Before 5" class="toggle-image" data-before="newImages/before5.jpg" data-after="newImages/after5.jpg">
+            </div>
+            <!-- Image Set 6 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before6.jpg" alt="Lawn Before 6" class="toggle-image" data-before="newImages/before6.jpg" data-after="newImages/after6.jpg">
+            </div>
+            <!-- Image Set 7 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before7.jpg" alt="Lawn Before 7" class="toggle-image" data-before="newImages/before7.jpg" data-after="newImages/after7.jpg">
+            </div>
+            <!-- Image Set 8 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before8.jpg" alt="Lawn Before 8" class="toggle-image" data-before="newImages/before8.jpg" data-after="newImages/after8.jpg">
+            </div>
+            <!-- Image Set 9 with Before/After Toggle -->
+            <div class="carousel-slide">
+                <img src="newImages/before9.jpg" alt="Lawn Before 9" class="toggle-image" data-before="newImages/before9.jpg" data-after="newImages/after9.jpg">
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <button class="carousel-button left-btn">&lt;</button>
+        <button class="carousel-button right-btn">&gt;</button>
+    </div>
+</section>
+<!-- End Lawn Images Section -->
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h1>Our Services</h1>
+            <p>We provide the following services:</p>
+            <ul id="listOfServices">
+                <li>Mowing</li>
+                <li>Edging</li>
+                <li>Weed Whacking</li>
+                <li>Bush & Hedge Shaving</li>
+                <li>Small Limb Removal</li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+            <!-- Expandable Reviews Section -->
+            <div class="review">
+                <h3>"Wonderful team to deal with! Excellent pricing, very communicative and always show up when they say they will. 10/10 Recommend." - Anthony Toal</h3>
+            </div>
+            <div class="review">
+                <h3>"They do a fantastic job! Very responsive and respectful. They take care of your yard like they would their own. They even moved our shoes on the back porch before blowing it off." - Richard Groeneveld</h3>
+            </div>
+            <!-- More reviews initially hidden -->
+            <div id="more-reviews" class="hidden-reviews">
+                <div class="review">
+                    <h3>"This squad does an amazing job getting any yard looking right! They are fast, efficient, and professional." - Ashley Harpe</h3>
+                </div>
+                <div class="review">
+                    <h3>"The team was professional, punctual, and thorough. Their commitment to quality and customer satisfaction is top-notch!" - Flora Groeneveld</h3>
+                </div>
+                <div class="review">
+                    <h3>"The best in town. Lovely people. Great job!" - Sarah Miller</h3>
+                </div>
+                <div class="review">
+                    <h3>"They came out with short notice and did an amazing job. I highly recommend them!" - Meghan Lisa</h3>
+                </div>
+                <div class="review">
+                    <h3>"I recently had the pleasure of working with Coastal Mowing Masters, and I can't recommend them highly enough! My yard was in desperate need of some TLC..." - Andrew Mize</h3>
+                </div>
+                <!-- Additional reviews go here -->
+            </div>
+            <!-- Expand Button -->
+            <button id="toggle-reviews" class="expand-btn">Show More Reviews</button>
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    
+
+
+    <!-- End Lawn Images Section -->
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>Meet the Team</h2>
+        <p>Taylor is the mechanical genius. Halie is the next social media influencer, and Jacob is the brains of it all.</p>
+        <p>We're passionate about delivering top-quality service. Taylor, Halie, and Jacob were born and raised in Kingsland, GA, and love giving back to their community.</p>
+        <h3>Fun Facts:</h3>
+        <ul>
+            <li>Halie: Guilty pleasure is Starbucks and McDonald's</li>
+            <li>Taylor: Former kicker/punter for Camden County Wildcats, loves Reese's</li>
+            <li>Jacob: Has had two open-heart surgeries and is a big Dr. Pepper fan</li>
+        </ul>
+        <img src="https://codehs.com/uploads/c0ab74232d2339cad8620cda2e8e1da5">
+        
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>What services do you offer?</h3>
+            <p>We provide mowing, edging, weed whacking, bush & hedge shaving, and small limb removal.</p>
+        </div>
+        <div class="faq">
+            <h3>What areas do you serve?</h3>
+            <p>We primarily serve Kingsland, GA, and surrounding areas. Contact us for specific locations.</p>
+        </div>
+        <div class="faq">
+            <h3>How can I book a service?</h3>
+            <p>You can call us at (912) 322-1022 or email us at Haliewalker745@yahoo.com to schedule a service or request a quote.</p>
+        </div>
+        <div class="faq">
+            <h3>What are your prices?</h3>
+            <p>Prices vary depending on the job. Contact us for a custom quote.</p>
+        </div>
+    </section>
+    <!-- End FAQs Section -->
+
+    <!-- Footer Section -->
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+                <a href="#services"><i class="fas fa-chevron-right"></i> Services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <p>Email: Haliewalker745@yahoo.com</p>
+                <p>Phone: (912) 322-1022</p>
+                <p>Location: Kingsland, GA</p>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=61563111547205" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+        <div class="credit">© 2024 Coastal Mowing Masters | All rights reserved.</div>
+    </section>
+    <!-- End Footer Section -->
+    
+    <script src="js/script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.right-btn');
+    const prevButton = document.querySelector('.left-btn');
+    let currentSlideIndex = 0;
+
+    // Swipe the carousel left or right
+    function moveToSlide(track, currentSlideIndex) {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = 'translateX(' + (-slideWidth * currentSlideIndex) + 'px)';
+    }
+
+    nextButton.addEventListener('click', () => {
+        if (currentSlideIndex < slides.length - 1) {
+            currentSlideIndex++;
+            moveToSlide(track, currentSlideIndex);
+        }
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentSlideIndex > 0) {
+            currentSlideIndex--;
+            moveToSlide(track, currentSlideIndex);
+        }
+    });
+
+    // Switch between 'before' and 'after' images on click
+    const toggleImages = document.querySelectorAll(".toggle-image");
+
+    toggleImages.forEach(function(image) {
+        image.addEventListener("click", function() {
+            
+                if (image.src.includes(image.getAttribute('data-before'))) {
+                    image.src = image.getAttribute('data-after');
+                } else {
+                    image.src = image.getAttribute('data-before');
+                }
+
+                
+        });
+    });
+});
+
+// JavaScript for expandable reviews
+        const toggleButton = document.getElementById('toggle-reviews');
+        const moreReviews = document.getElementById('more-reviews');
+        let reviewsExpanded = false;
+
+        toggleButton.addEventListener('click', function () {
+            if (reviewsExpanded) {
+                moreReviews.style.display = 'none';
+                toggleButton.textContent = 'Show More Reviews';
+                reviewsExpanded = false;
+            } else {
+                moreReviews.style.display = 'block';
+                toggleButton.textContent = 'Show Less Reviews';
+                reviewsExpanded = true;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
