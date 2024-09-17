@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    color: #FFFFFF;
+    
+    background-color: var(--Lighter-Gray);
+}
+
+h1 {
+    color: var(--Primary-Accent);
+}
+
+h2 {
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    
+}
+#c{
+    text-align: center;
+    margin: 0 auto;
+}
+::selection {
+    background-color: var(--Primary-Accent);
+    color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Primary-Accent);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--Lighter-Gray); /* Match this with the header background */
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Custom Properties */
+:root {
+    --Primary-Accent: #A9F41E;
+    --Grayish-Blue: #BBBBBB;
+    --Dark-Gray: #121212; /* Main background color */
+    --Lighter-Gray: #1E1E1E; /* Lighter gray for header, service cards, footer */
+    --Lightest-Gray: #333333; /* Background of service cards and footer */
+    --box-shadow: .5rem .5rem 0 var(--Primary-Accent);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: 0.2rem solid var(--Primary-Accent);
+}
+
+/* Navbar */
+.header {
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: var(--Dark-Gray);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .active {
+    display: block; 
+    position:absolute;
+    /* Show the menu when the active class is added */
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+
+.header .navbar a:hover {
+    color: var(--Primary-Accent);
+}
+
+.header .navbar .btn {
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    background-color: var(--Primary-Accent);
+    color: #000000;
+    border-radius: 0.5rem;
+}
+
+.header .navbar .btn:hover {
+    background-color: #8DCE1F;
+}
+
+.header .fas.fa-bars {
+    display: none;
+}
+.header .logo img {
+    background-color: var(--Dark-Gray); 
+    
+}
+
+.header .navbar {
+    background-color: transparent; 
+    
+}
+
+.header .navbar a {
+    background-color: transparent; 
+}
+
+/* Home Section */
+.home {
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.home .content h1 {
+    font-size: 4.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    max-width: 40rem;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+}
+
+.home .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home .content img.title-img {
+    max-width: 50%; /* Adjust percentage or use specific pixel values */
+    height: auto;
+}
+#team_photo{
+   text-align: center;
+    margin: 0 auto; 
+}
+/* Features Section */
+.features {
+    padding: 2rem 9%;
+    background-color: var(--Dark-Gray);
+    text-align: center;
+}
+
+.features .heading h1 {
+    color: var(--Primary-Accent);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    font-size: 1.5rem;
+    color: var(--Grayish-Blue);
+    margin: 0.5rem 0;
+}
+
+.features .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.features .row .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features .row .content {
+    max-width: 50rem;
+}
+
+.features .row .content p {
+    font-size: 1.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.features .row .all-btn {
+    padding: 1rem 2rem;
+    background-color: var(--Primary-Accent);
+    color: #000000;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.features .row .all-btn:hover {
+    background-color: #8DCE1F;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 2rem 9%;
+    background-color: var(--Dark-Gray);
+    text-align: center;
+}
+
+.reviews h2 {
+    color: var(--Primary-Accent);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.fb-reviews {
+    /* Customize as needed */
+}
+
+/* Photos Section */
+.photos {
+    padding: 2rem 9%;
+    background-color: var(--Dark-Gray);
+    text-align: center;
+}
+
+.photos h2 {
+    color: var(--Primary-Accent);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.photos .gallery a {
+    display: block;
+    margin: 0 auto;
+}
+
+.photos .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+/* Lawn Images Section */
+.lawn-images {
+    padding: 2rem 9%;
+    background-color: var(--Dark-Gray);
+    text-align: center;
+}
+
+.lawn-images h2 {
+    color: var(--Primary-Accent); /* Section title color */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lawn-images .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.lawn-images .image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Services Section */
+/*.services {*/
+/*    padding: 2rem 9%;*/
+/*    background-color: var(--Lighter-Gray);*/
+/*}*/
+
+/*.services .heading {*/
+/*    text-align: center;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/*.services .heading h1 {*/
+/*    color: var(--Primary-Accent);*/
+/*    font-size: 3rem;*/
+/*}*/
+
+/*.services .heading p {*/
+/*    color: var(--Grayish-Blue);*/
+/*    font-size: 1.5rem;*/
+/*    max-width: 50rem;*/
+/*    margin: 0 auto;*/
+/*    padding-bottom: 2rem;*/
+/*}*/
+
+/*.services .box-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.services .box {*/
+/*    background-color: transparent;*/
+/*    border-radius: 0.5rem;*/
+/*    padding: 2rem;*/
+/*    text-align: center;*/
+/*    flex: 1;*/
+
+/*}*/
+
+/*.services .box img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    border-radius: 0.5rem;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*.services .box h3 {*/
+/*    color: var(--Primary-Accent);*/
+/*    font-size: 2rem;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*.services .box p {*/
+/*    color: var(--Grayish-Blue);*/
+/*    font-size: 1rem;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/*.services .box .all-btn {*/
+/*    padding: 1rem 2rem;*/
+/*    background-color: var(--Primary-Accent);*/
+/*    color: #000000;*/
+/*    border-radius: 0.5rem;*/
+/*    text-decoration: none;*/
+/*    font-size: 1rem;*/
+/*}*/
+
+/*.services .box .all-btn:hover {*/
+/*    background-color: #8DCE1F;*/
+/*}*/
+
+.testimonial {
+    margin-top: 1.5rem;       
+}
+
+/* Footer Section */
+.footer {
+    padding: 2rem 9%;
+    background-color: var(--Lighter-Gray);
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer .box {
+    flex: 1;
+}
+
+.footer .box h3 {
+    color: var(--Primary-Accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .box a {
+    display: block;
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer .box a:hover {
+    color: var(--Primary-Accent);
+}
+
+.footer .credit {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--Primary-Accent);
+}
+
+            /* Media Queries */
+            @media (max-width: 768px) {
+                .header .navbar {
+                    display: none;
+                }
+
+                .header .fas.fa-bars {
+                    display: block;
+                    font-size: 2.5rem;
+                    color: var(--Grayish-Blue); /* Ensure this variable is defined in your CSS */
+                    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+                }
+
+                .header .menu {
+                    display: none; /* Initially hide the menu */
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    background-color: var(--Lighter-Gray); /* Ensure this variable is defined in your CSS */
+                    width: 100%; /* Full width for the menu */
+                    height: 100%; /* Full height for the menu */
+                    z-index: 9999; /* Make sure it appears on top */
+                    padding: 2rem; /* Adjust padding as needed */
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add shadow for better visibility */
+                    overflow-y: auto; /* Enable scrolling if content overflows */
+                    transition: transform 0.3s ease; /* Smooth transition for menu visibility */
+                    transform: translateX(100%); /* Start off-screen to the right */
+                }
+
+                .header .menu.active {
+                    display: block; /* Show the menu when active */
+                    transform: translateX(0); /* Move menu into view */
+                }
+
+                .header .menu a {
+                    display: block;
+                    padding: 1rem;
+                    font-size: 1.5rem; /* Adjust font size for mobile */
+                    color: var(--Dark-Gray); /* Ensure this variable is defined in your CSS */
+                    text-align: center; /* Center-align text */
+                    text-decoration: none; /* Remove underline from links */
+                    border-bottom: 1px solid var(--Light-Gray); /* Optional: Add separator line */
+                }
+
+                .header .menu a:hover {
+                    background-color: var(--Primary-Color); /* Highlight menu items on hover */
+                    color: #ffffff; /* Change text color on hover */
+                }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+/*style list of things they do under "our services"*/
+
+#listOfServices {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #e0ffe0;
+}
+
+#listOfServices li {
+    padding: 15px 20px; /* More padding for better spacing */
+    color: #006400;
+    /*font-size: 5vw; */
+    font-size: min(5vw, 100px);/* Smaller, but still responsive font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*#listOfServices li:hover {*/
+/*    background-color: #c2e0c2; */
+/*    transform: scale(1.02);*/
+/*}*/
+
+
+
+
+
+.beforeAndAfter img {
+    width: 100%;          
+    max-width: 600px;      
+    border: 2px solid #008000; 
+    border-radius: 10px;    
+    cursor: pointer;        
+    transition: opacity 0.3s ease; 
+}
+
+.beforeAndAfter img.hidden {
+    opacity: 0;            
+}
+
+/* Text appearance on load */
+body {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Services Dropdown */
+/*#services-btn {*/
+/*    cursor: pointer;*/
+/*    padding: 10px;*/
+/*    background-color: #4CAF50;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*#services-list {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: none;*/
+/*    transition: max-height 0.5s ease-in-out;*/
+/*}*/
+
+/*#services-list a {*/
+/*    text-decoration: none;*/
+/*    display: block;*/
+/*    padding: 10px;*/
+/*    background-color: #f9f9f9;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*}*/
+
+/*#services-list a:hover {*/
+/*    background-color: #ccc;*/
+/*}*/
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+/* Smooth dropdown animation for services section */
+/*#services-list {*/
+/*    max-height: 0;*/
+/*    overflow: hidden;*/
+/*    transition: max-height 0.5s ease-in-out;*/
+/*}*/
+
+/*#services-list.visible {*/
+    max-height: 500px; /* Adjust max height as needed */
+/*}*/
+
+/*.center-text {*/
+/*    text-align: center;*/
+/*    margin: 0 auto;*/
+    max-width: 80%; /* Adjust as needed 
+}
+
+
+
+/*.lawn-images .image-gallery {*/
+/*    display: grid;*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width */
+/*    gap: 1rem;*/
+/*}*/
+
+/*.lawn-images .toggle-image {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    cursor: pointer;*/
+    transition: opacity 1.5s ease-in-out; /* Smooth transition */
+/*    opacity: 1;*/
+/*}*/
+
+/*.toggle-image.fade-out {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.toggle-image.fade-in {*/
+/*    opacity: 1;*/
+/*}*/
+
+/* Carousel container and track */
+/* Carousel container and track */
+/* Carousel container and track */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto;
+    border: 2px solid #ccc; /* Optional: Add a border for clarity */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Each slide takes up the entire carousel width */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation buttons */
+.carousel-button {
+    position: absolute;
+    top: 150%; 
+    /* Moves the buttons closer to the top of the carousel */
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.left-btn {
+    left: 10px; /* Aligns the left button inside the carousel on the left */
+}
+
+.right-btn {
+    right: 10px; /* Aligns the right button inside the carousel on the right */
+}
+
+/* Optional: Add hover effect for buttons */
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image styles */
+.toggle-image {
+    width: 100%; /* Ensures the image takes up the full slide width */
+    height: auto;
+    cursor: pointer;
+    
+}
+
+
+
+/* About Us Section */
+.about {
+    background-color: var(--lighter-Gray); /* Match the overall site background */
+    padding: 4rem 9%; /* Add more padding for a clean layout */
+    text-align: center; /* Center text for a cleaner look */
+    color: var(--Grayish-Blue); /* Keep the color consistent with the site */
+    border-radius: 1rem; /* Add rounded corners for a soft, modern feel */
+    box-shadow: var(--box-shadow); /* Apply shadow to elevate the section */
+}
+
+.about h2 {
+    color: var(--Primary-Accent); /* Highlight section heading */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase; /* Add a professional touch */
+}
+
+.about p {
+    font-size: 1.5rem;
+    max-width: 70rem; /* Limit text width for readability */
+    margin: 0 auto 2rem auto;
+    line-height: 1.7;
+}
+
+.about ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Make the fun facts more interactive */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about li {
+    background-color: var(--Lighter-Gray); /* Use the lighter gray for contrast */
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow); /* Add subtle shadow */
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 2rem); /* Flexible layout for 3 items per row */
+}
+
+.about li:hover {
+    transform: scale(1.05); /* Add a hover effect */
+}
+
+.about h3 {
+    color: var(--Primary-Accent);
+    margin-bottom: 1rem;
+}
+
+/* FAQ Section */
+.faqs {
+    padding: 4rem 9%; /* Add padding for space */
+    color: var(--Grayish-Blue); /* Text color matches other sections */
+    border-radius: 1rem;
+    /*box-shadow: var(--box-shadow);*/
+    max-width: 80rem;
+    margin: 0 auto; /* Center the FAQ section */
+    background-color: transparent;
+}
+
+.faqs h2 {
+    color: var(--Primary-Accent); /* Section title color */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.faq {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: var(--box-shadow); /* Shadow for visual depth */
+}
+
+.faq:hover {
+    background-color: transparent; /* Subtle hover background change */
+    transform: scale(1.02); /* Slight hover scaling */
+}
+
+.faq h3 {
+    color: var(--Primary-Accent); /* Make FAQ questions stand out */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.faq p {
+    font-size: 1.5rem;
+    color: var(--Grayish-Blue); /* FAQ answers keep the same gray-blue */
+}
+
+@media (max-width: 768px) {
+    .header .navbar {
+        display: none; /* Hide the navbar by default on mobile */
+    }
+
+    .header .navbar.active {
+        display: flex; /* Show the navbar when it has the active class */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position it below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--Lighter-Gray); /* Background color for the navbar */
+        padding: 2rem 0;
+        z-index: 100;
+    }
+
+    .header .navbar a {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        border-bottom: 1px solid var(--Primary-Accent);
+    }
+
+    .header .fas.fa-bars {
+        display: block; /* Display the hamburger icon */
+        font-size: 2.5rem;
+        color: var(--Grayish-Blue);
+        cursor: pointer;
+    }
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 300px; /* Adjust based on the image size you prefer */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button.left-btn {
+    left: 10px;
+}
+
+.carousel-button.right-btn {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-slide {
+        min-width: 250px;
+    }
+}
+
+.services .box {
+    cursor: pointer;
+}
+h1, h2, h3 {
+    color: var(--Primary-Accent);
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Updated Services Section */
+.services {
+    padding: 2rem 9%;
+    background-color: var(--Lighter-Gray);
+}
+
+.services .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Updated Services Section with Requested Changes */
+.services .heading h1 {
+    color: var(--Primary-Accent); /* Section title color */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services .heading p {
+    color: var(--Grayish-Blue);
+    font-size: 3rem; /* Larger paragraph font size */
+    max-width: 40rem; /* Adjusted width for a more compact layout */
+    margin: 0 auto;
+    padding-bottom: 1rem; /* Reduced padding */
+}
+
+#listOfServices {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem; /* Larger font size for list */
+}
+
+#listOfServices li {
+    padding: 10px 15px; /* Reduced padding */
+    color: #006400;
+    font-size: 2rem; /* Reduced font size but still responsive */
+    /* Hover effect removed */
+}
+
+
+
+
+
+
+
+
+
+
+/*review:*/
+.review {
+            background-color: #e8f5e9; /* Softer green for better readability */
+            border: none; /* Removed border */
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            /* Small shadow for depth */
+        }
+
+        .review h3 {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2e7d32; /* Dark green for clearer contrast */
+        }
+
+        .expand-btn {
+            background-color: #388e3c; /* A stronger green for the button */
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .expand-btn:hover {
+            background-color: #2e7d32; /* Darker green hover effect */
+        }
+
+        .hidden-reviews {
+            display: none;
+        }
+
+        .reviews-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1b5e20; /* Darker green for the section title */
+            margin-bottom: 25px;
+        }
+        
+        
+#lawn-images-carousel h2, #testimonials h2, #facebook-page h2
+{
+    color: var(--Primary-Accent); /* Highlight section heading */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase; /* Add a professional touch */
+}
+
+/* Mobile Menu Button */
+.fas.fa-bars {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--Grayish-Blue);
+}
+
+/* Hide the navbar by default on smaller screens */
+.navbar {
+    display: flex;
+    flex-direction: row; /* For desktop */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navbar on mobile by default */
+        flex-direction: column; /* Stack links vertically for mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--Lighter-Gray); /* Same as your site's background */
+        padding: 2rem 0;
+    }
+
+    .navbar.active {
+        display: flex; /* Show the menu when the active class is added */
+    }
+
+    .fas.fa-bars {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+}
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the iframe */
+    align-items: center; /* Vertically center if needed */
+    margin-top: 20px; /* Optional: add some space at the top */
+}
